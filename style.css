@@ -5,6 +5,8 @@
   --accent: #3b6ef5;
   --card-bg: #fff;
   --border: #e5e5e0;
+  --hero-from: #dfe7ff;
+  --hero-to: #f6e8ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +17,8 @@
     --accent: #7c9cff;
     --card-bg: #1f2026;
     --border: #2e2f36;
+    --hero-from: #1d2647;
+    --hero-to: #2e1f3d;
   }
 }
 
@@ -34,6 +38,7 @@ body {
 .hero {
   text-align: center;
   padding: 96px 16px 64px;
+  background: linear-gradient(135deg, var(--hero-from), var(--hero-to));
 }
 
 .hero h1 {
@@ -45,6 +50,33 @@ body {
   margin-top: 12px;
   color: var(--muted);
   font-size: 1.1rem;
+}
+
+.nav {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav a {
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.nav a:hover {
+  background: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
