@@ -1,5 +1,8 @@
 // 푸터에 현재 연도 표시
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
 // 스크롤 시 섹션이 부드럽게 나타나도록 처리
 const sections = document.querySelectorAll(".section");
