@@ -42,6 +42,40 @@ h2 {
   padding-bottom: 4px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 8px 0;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 .site-footer {
   padding: 24px 16px;
   text-align: center;
