@@ -98,3 +98,62 @@ h2 {
 .menu a:hover {
   text-decoration: underline;
 }
+
+/* 다크모드 토글 버튼 */
+.site-header {
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  color: inherit;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* 다크모드 */
+[data-theme="dark"] body {
+  color: #e4dff0;
+  background: #1e1b26;
+}
+
+[data-theme="dark"] .site-header {
+  background: #3d3550;
+  color: #ece6f7;
+}
+
+[data-theme="dark"] h2 {
+  border-bottom-color: #7a4a5e;
+}
+
+[data-theme="dark"] .card {
+  background: #2a3a33;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .card p {
+  color: #b8b1c6;
+}
+
+[data-theme="dark"] .site-footer {
+  color: #9a93a8;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
