@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 다크모드 토글 (선택은 localStorage에 저장)
 const THEME_KEY = "theme";
 const root = document.documentElement;
@@ -73,3 +74,5 @@ if ("IntersectionObserver" in window) {
 } else {
   sections.forEach((section) => section.classList.add("visible"));
 }
+=======
+>>>>>>> origin/main

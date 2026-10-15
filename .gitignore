@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+# 비밀 파일
+=======
 # 환경 변수 (예시 파일은 올림)
+>>>>>>> 002702b3a95fef6d48c8acef1af387bb6c58d1e8
 .env
 .env.*
 !.env.example
@@ -6,7 +10,11 @@
 # 로그
 *.log
 
+<<<<<<< HEAD
+# OS 잡파일
+=======
 # OS 생성 파일
+>>>>>>> 002702b3a95fef6d48c8acef1af387bb6c58d1e8
 .DS_Store
 Thumbs.db
 
